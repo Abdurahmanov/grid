@@ -1,0 +1,101 @@
+.grid{
+  background-color: #fbfbf1;
+  height 100vh
+  &__wrapper{
+    max-width 1200px
+    box-shadow: 3px 0 32px rgba(0,0,0,.5);
+    margin: 0 auto;
+    background #fff
+    height 100%
+    padding 50px
+  }
+  &__title{
+    font-size 36px
+    text-align center
+  }
+  &__form{
+    margin-top 30px
+    display flex
+    justify-content space-between
+    input{
+      width 250px
+      height 50px
+      border-radius 10px
+      outline none
+      border 2px solid #eee
+      padding 0 15px
+      font-size 20px
+    }
+    button{
+      width 250px
+      height 50px
+      border-radius 10px
+      outline none
+      border 2px solid #eee
+      background #2072b9
+      color #fff
+      font-size 20px
+      cursor: pointer
+      opacity 0.8
+      transition 0.3s
+      &:hover{
+        opacity 1
+        transition 0.3s
+      }
+    }
+  }
+  table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 0;
+    margin-top: 30px;
+    border-collapse: collapse;
+  }
+  thead{
+    tr{
+      &:hover{
+        background #fff
+      }
+    }
+  }
+  tfoot{
+    td{
+      font-size 20px
+      color #7d7d7d
+    }
+  }
+  tr{
+    background-color: #fff;
+    border-bottom: 1px solid #f6f6f6;
+    transition: .3s;
+    .btn{
+      opacity 0
+      transition 0.3s
+    }
+    &:hover{
+      background #f6f6f6
+      transition: .3s;
+      .btn{
+        opacity 0.8
+        transition 0.3s
+        &:hover{
+          opacity 1
+          transition 0.3s
+        }
+      }
+    }
+  }
+  th{
+    font-size: 20px;
+    line-height: 35px;
+    color: #464342;
+    padding-bottom: 8px;
+    padding-top: 8px;
+  }
+  td{
+    padding: 8px 0;
+    font-size: 16px;
+    color: #464342;
+    line-height: 35px;
+  }
+}
